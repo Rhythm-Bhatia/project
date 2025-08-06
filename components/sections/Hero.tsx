@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { ChevronDown, Download, Mail } from 'lucide-react';
+import profileImg from '../../app/assets/profile.jpg';
 
 const jobTitles = [
   'Full Stack Developer',
@@ -42,7 +43,7 @@ export default function Hero() {
             >
               <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
                 <img
-                  src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  src={profileImg.src}
                   alt="Profile"
                   className="w-full h-full rounded-full object-cover"
                 />
