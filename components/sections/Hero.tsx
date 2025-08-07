@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { ChevronDown, Download, Mail } from 'lucide-react';
-import profileImg from '../../app/assets/profile.jpg';
+import profile from '../../app/assets/profile.jpg';
 
 const jobTitles = [
   'Full Stack Developer',
@@ -41,13 +41,13 @@ export default function Hero() {
               whileHover={{ scale: 1.1 }}
               className="w-full h-full rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1"
             >
-              <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
-                <img
-                  src={profileImg.src}
-                  alt="Profile"
-                  className="w-full h-full rounded-full object-cover"
-                />
-              </div>
+               <div className="w-32 h-32 rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
+                  <img
+                    src={profile.src}
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
             </motion.div>
             <motion.div
               animate={{ rotate: 360 }}
